@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TravelGuide</string>
+    <string name="welcome">Welcome</string>
+    <string name="login_to_exlpore_now">Login to_Exlpore_Now</string>
+    <string name="don_t_you_have_account">Don\'t you have account?</string>
+    <string name="signup">SignUp</string>
+    <string name="todo6">todo6</string>
+    <string name="enter_username">enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="register">register</string>
+    <string name="login">Login</string>
+</resources>

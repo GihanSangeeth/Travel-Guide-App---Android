@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/mainImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slideshow" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="270dp"
+                    android:layout_height="159dp"
+                    android:layout_alignBottom="@id/mainImage"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="43dp"
+                    android:text="Help You Find  Best Cities to Travel"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:text="Country List"
+                android:textColor="#009bba"
+                android:textSize="24sp"
+                app:fontFamily="sans-serif-smallcaps" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--      card1    -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_italy"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardElevation="0dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/italy" />
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="ITALY"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+                            <Button
+                                android:id="@+id/btn1"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite1"
+                                app:layout_constraintBottom_toTopOf="@+id/text1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--      card2     -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_SL"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/srilanka" />
+
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="SRI LANKA"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+                            <Button
+                                android:id="@+id/btn2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite2"
+                                app:layout_constraintBottom_toTopOf="@+id/text2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--      card3     -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_BR"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text3"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/brazil" />
+
+                            <TextView
+                                android:id="@+id/text3"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="BRAZIL"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+                            <Button
+                                android:id="@+id/btn3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite3"
+                                app:layout_constraintBottom_toTopOf="@+id/text3"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card4  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_BH"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text4"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/bhutan" />
+
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="BHUTHAN"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+                            <Button
+                                android:id="@+id/btn4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite4"
+                                app:layout_constraintBottom_toTopOf="@+id/text4"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card5  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_CA"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image5"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/canada" />
+
+                            <TextView
+                                android:id="@+id/text5"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="CANADA"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image5" />
+
+                            <Button
+                                android:id="@+id/btn5"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite5"
+                                app:layout_constraintBottom_toTopOf="@+id/text5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card6  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_GR"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image6"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text6"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/greece" />
+
+                            <TextView
+                                android:id="@+id/text6"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="GREECE"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image6" />
+
+                            <Button
+                                android:id="@+id/btn6"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite6"
+                                app:layout_constraintBottom_toTopOf="@+id/text6"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card7  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_IR"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image7"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text7"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ireland" />
+
+                            <TextView
+                                android:id="@+id/text7"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="IRELAND"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image7" />
+
+                            <Button
+                                android:id="@+id/btn7"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite7"
+                                app:layout_constraintBottom_toTopOf="@+id/text7"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card8  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_NZ"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image8"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text8"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/nz" />
+
+                            <TextView
+                                android:id="@+id/text8"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="NEW ZEALAND"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image8" />
+
+                            <Button
+                                android:id="@+id/btn8"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite8"
+                                app:layout_constraintBottom_toTopOf="@+id/text8"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card9  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_SP"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image9"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text9"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/spain" />
+
+                            <TextView
+                                android:id="@+id/text9"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="SPAIN"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image9" />
+
+                            <Button
+                                android:id="@+id/btn9"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite9"
+                                app:layout_constraintBottom_toTopOf="@+id/text9"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--   card10  -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="click_SW"
+                        app:cardElevation="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/image10"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:contentDescription="TODO"
+                                app:layout_constraintBottom_toTopOf="@+id/text10"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/switzerland" />
+
+                            <TextView
+                                android:id="@+id/text10"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="SWITZERLAND"
+                                android:textAlignment="center"
+                                android:textColor="#009bba"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:fontFamily="serif-monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/image10" />
+
+                            <Button
+                                android:id="@+id/btn10"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_favorite_shadow_24dp"
+                                android:onClick="btn_favorite10"
+                                app:layout_constraintBottom_toTopOf="@+id/text10"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#009bba"
+        android:onClick="favorite"
+        android:text="Favorite List" />
+
+
+</LinearLayout>
